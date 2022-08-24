@@ -9,14 +9,34 @@
 </head>
 <body>
     <div class="body">
+        <div class="header">
+            <h1 class="header-title"> Rock Paper Scissors game</h1>
+            <p><i>With UI!</i></p>
+        </div>
         <div class="scores">
             <h1 class="player-score">Player Score: 0</h1>
             <h1 class="computer-score">Computer Score: 0</h1>
         </div>
-        <div class="player-buttons">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissors">Scissors</button>
+        <div class="game-text"></div>
+        <div class="restart-button">Restart Game</div>
+        <div class="start-button">Start Game</div>
+        <div class="image-container hide">
+            <div data-weapon="Rock" class="image-content">
+                <img data-weapon="Rock" class="rock" src="./images/Rock.png" alt="Rock">
+                <p data-weapon="Rock" class="image-text">Rock</p>
+            </div>
+            <div data-weapon="Paper" class="image-content">
+                <img data-weapon="Paper" class="paper" src="./images/paper.png" alt="paper">
+                <p data-weapon="Paper" class="image-text">Paper</p>
+            </div>
+            <div data-weapon="Scissors" class="image-content">
+                <img data-weapon="Scissors" class="scissors" src="./images/Scissors.png" alt="scissors">
+                <p data-weapon="Scissors" class="image-text">Scissors</p>
+            </div>
+        </div>
+        <div class="footer">
+            <span>Page by <a class="footer-link" href="https://www.github.com/unartcs">Daniel Cohen</a></span>
+            <a class="cartoon-credits" href="https://www.vecteezy.com/free-vector/cartoon">Cartoon Vectors by Vecteezy</a>
         </div>
     </div>
     <script src="app.js"></script>

@@ -1,14 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Aboreto', cursive;
+}
+
+a:link,
+a:visited {
+    color: blue;
+
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    gap: 8px;
+    padding-bottom: 25px;
+}
+
+.header-title {
+    font-size: 56px;
 }
 
 .body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     min-height: 100vh;
-    gap: 100px;
   }
+
+.image-container {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.image-content {
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.image-content:hover {
+    transform: scale(1.1);
+
+    transition: all ease-in-out 0.2s;
+}
+
+.image-text {
+    font-size: 35px;
+}
+
+.rock,
+.paper,
+.scissors {
+    width: 200px;
+    transition: all ease-in-out 0.2s;
+}
+
+.footer {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+
+
+.restart-button {
+    opacity: 0;
+    font-size: 35px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: 2px black solid;
+    transition: all ease-in-out 1.1s;
+}
+
+.game-text {
+    font-size: 42px;
+    color: black;
+    transition: all ease-in-out 0.1s;
+}
+
+.restart-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+}
+
+
+.start-button {
+    border: 2px black solid;
+    background: navy;
+    padding: 25px;
+    font-size: 55px;
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+
+.start-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.show {
+    visibility:visible;
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+.footer-link {
+    font-size: 26px;
+    color: aqua;
+}
+
+.cartoon-credits {
+    font-size: 12px;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.game-text {
+    margin-bottom: 15px;
+}
